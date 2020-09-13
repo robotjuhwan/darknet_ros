@@ -8,6 +8,7 @@
 
 #include "darknet_ros/image_interface.h"
 
+
 static float get_pixel(image m, int x, int y, int c) {
   assert(x < m.w && y < m.h && c < m.c);
   return m.data[c * m.h * m.w + y * m.w + x];
